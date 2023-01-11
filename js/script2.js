@@ -1,22 +1,12 @@
 // UI Logic
 
-function getAndSetMadLibValues() {
-    const person1Input = document.getElementById("person1Input").value;
-    const person2Input = document.getElementById("person2Input").value;
-    const animalInput= document.getElementById("animalInput").value;
-    const exclamationInput = document.getElementById("exclamationInput").value;
-    const verbInput = document.getElementById("verbInput").value;
-    const nounInput = document.getElementById("nounInput").value;
+function getAndSetValues() {
+    const nameInput = document.getElementById("nameInput").value;
   
-    document.querySelector("span#person1a").innerText = person1Input;
-    document.querySelector("span#person1b").innerText = person1Input;
-    document.querySelector("span#person1c").innerText = person1Input;
-    document.querySelector("span#person2a").innerText = person2Input;
-    document.querySelector("span#person2b").innerText = person2Input;
-    document.querySelector("span#animal").innerText = animalInput;
-    document.querySelector("span#verb").innerText = verbInput;
-    document.querySelector("span#noun").innerText = nounInput;
-    document.querySelector("span#exclamation").innerText = exclamationInput;
+    document.querySelector("span#name1a").innerText = nameInput;
+    document.querySelector("span#name1b").innerText = nameInput;
+    document.querySelector("span#name1c").innerText = nameInput;document.querySelector("span#name1d").innerText = nameInput;
+    document.querySelector("span#name1e").innerText = nameInput;document.querySelector("span#name1f").innerText = nameInput;document.querySelector("span#name1g").innerText = nameInput;
   }
   
   // this function creates the onsubmit event handler
@@ -25,8 +15,8 @@ function getAndSetMadLibValues() {
     let form = document.querySelector("form");
     form.onsubmit = function(event) {
       event.preventDefault();
-      getAndSetMadLibValues();
-      document.querySelector("div#story").removeAttribute("class");
+      getAndSetValues();
+      document.querySelector("div#letter").removeAttribute("class");
     }
   }
   
